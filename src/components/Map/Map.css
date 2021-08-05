@@ -1,0 +1,51 @@
+.Container{
+    display: flex;
+}
+
+.Tag{
+    margin-left: 4em;
+}
+
+.Tag h1{
+    font-size: 2.6em;
+    color: orange;
+    margin-bottom: 70px;
+}
+
+.Tag a{
+    text-decoration: none;
+    color: green;
+    font-size: 1.5em;
+    border: 2px solid rgb(96,137, 31);
+    padding: 10px 10px;
+    border-radius: 150px;
+}
+.Tag a:hover{
+    background-color: rgba(0, 256, 0, 0.2);
+}
+
+.Box img{
+    margin-left: 8em;
+    margin-top: 2em; 
+    margin-right: 2em;
+    width: 30vw;
+    height: 30vw;
+}
+
+@media (max-width: 768px) {
+    .Tag, .Tag h1, .Tag a, .Box img {
+        margin: 0.8em 0;
+        align-items: center;
+    }
+    .Container, .Tag{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
+@media (max-width: 540px){
+    .Tag h1{
+        font-size: 1.7em;
+    }
+}
