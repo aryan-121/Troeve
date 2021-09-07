@@ -10,7 +10,6 @@ const Map = () => {
             </div>
             <div className="Box">
                 <img src={map} alt="Map"/>
-
             </div>
         </div>
     );
